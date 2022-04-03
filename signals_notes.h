@@ -48,3 +48,4 @@ static inline double unit(double n)
 
 // UGH I'm not getting this... What how the fuck does shifting work in discrete time/programming?
 // Maybe the examples will help?
+// TODO: Apparently the next step is convolution...
