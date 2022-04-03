@@ -15,9 +15,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define PI 3.14159265359
+#include "toolbox.h"
 
-const double hamming_window(const double n, const double M) {
+static inline double hamming_window(const double n, const double M) {
     const double half_M = M / 2;
     if(abs(n) > half_M) {
         return 0.0;
@@ -30,7 +30,7 @@ int main()
 {
     double M = 2;
 
-    for(double n = -M/2; n < M/2; n += 0.1) {
+    for(double n = -M/2; n < M/2; n += 0.01) {
         double h = hamming_window(n, M);
         printf("%f %f\n", n, h);
     }    

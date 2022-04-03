@@ -42,7 +42,7 @@ static inline double unit(double n)
 
 //
 // TODO: How is this a weighted sum?
-// Any signal can be described by the weighted sum of shifted impulses
+// According to people: any signal can be described by the weighted sum of shifted impulses
 // 2δ[n+1] + 1δ[n] + -1δ[n-1] ... (so on and so forth)
 //
 
